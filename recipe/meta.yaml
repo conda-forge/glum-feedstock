@@ -1,17 +1,17 @@
 {% set name = "glum" %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 
 package:
-  name: {{ name|lower }} 
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bdc1d56af5d2407d42926f85367c07b0781bde1d9ca6d0ecfe8378d6f7f67b8f
+  sha256: 405cd64cc3ccd56918fc4aea20dba55710266ae47a495d51c02400fa89f6cd97
 
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - GLM_ARCHITECTURE=default
