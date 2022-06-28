@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - GLM_ARCHITECTURE=default
@@ -43,7 +43,7 @@ requirements:
     - pandas
     - scikit-learn >=0.23
     - scipy
-    - tabmat >=3.0.1
+    - tabmat >=3.1.0
 
 test:
   requires:
@@ -73,3 +73,4 @@ extra:
     - xhochy
     - tbenthompson
     - janjagusch
+    - jtilly
