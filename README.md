@@ -1,11 +1,11 @@
-About glum
-==========
+About glum-feedstock
+====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glum-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/Quantco/glum
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glum-feedstock/blob/main/LICENSE.txt)
 
 Summary: High performance Python GLMs with all the features! 
 
