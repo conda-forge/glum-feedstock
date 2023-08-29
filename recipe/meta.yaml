@@ -1,5 +1,5 @@
 {% set name = "glum" %}
-{% set version = "3.0.0a0" %}
+{% set version = "3.0.0a1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7f087199c93175e0f57f85047453d2d3f0c25bfd312721f8e70f2a0beede0f27
+  sha256: 47c17a687dd6c1e46ea643931c97571582360c5cb100478e618137754a53d745
 
 
 build:
@@ -43,7 +43,7 @@ requirements:
     - pandas
     - scikit-learn >=0.23
     - scipy
-    - tabmat >=4.0.0a0
+    - tabmat >=4.0.0a1
 
 test:
   requires:
