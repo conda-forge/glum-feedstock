@@ -1,5 +1,5 @@
 {% set name = "glum" %}
-{% set version = "2.7.0" %}
+{% set version = "3.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 1f716199f4533e971074f34f894c2eae6d0751cd57ae8ba4c9243a4bcb28e195
+  sha256: 58d44bb6b25f8da49712f57f50b80d7ea674fa0b7d42b778df77145b11da8f8a
 
 
 build:
@@ -25,6 +25,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler("c") }}
+    - {{ stdlib("c") }}
     - {{ compiler("cxx") }}
     - llvm-openmp  # [osx]
     - libgomp  # [linux]
@@ -44,7 +45,8 @@ requirements:
     - pandas
     - scikit-learn >=0.23
     - scipy
-    - tabmat >=3.1.0,<4
+    - formulaic >=0.6
+    - tabmat >=4.0.0
 
 test:
   requires:
