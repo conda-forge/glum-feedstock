@@ -1,5 +1,5 @@
 {% set name = "glum" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 58d44bb6b25f8da49712f57f50b80d7ea674fa0b7d42b778df77145b11da8f8a
+  sha256: af65edbabf7d76ab8caed0c51b6c02175ae7f5b7cca32ea65f465658edf24c9d
 
 
 build:
@@ -35,7 +35,7 @@ requirements:
     - llvm-openmp  # [osx]
     - numpy
     - pip
-    - scikit-learn >=0.23,<1.5
+    - scikit-learn >=0.23
     - setuptools_scm
   run:
     - python
@@ -43,7 +43,7 @@ requirements:
     - numexpr
     - {{ pin_compatible('numpy') }}
     - pandas
-    - scikit-learn >=0.23,<1.5
+    - scikit-learn >=0.23
     - scipy
     - formulaic >=0.6
     - tabmat >=4.0.0

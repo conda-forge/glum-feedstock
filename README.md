@@ -7,7 +7,7 @@ Home: https://github.com/Quantco/glum
 
 Package license: BSD-3-Clause
 
-Summary: High performance Python GLMs with all the features!
+Summary: High performance Python GLMs with all the features! 
 
 Development: https://github.com/Quantco/glum
 
@@ -24,7 +24,7 @@ Current build status
 
 
 <table>
-
+    
   <tr>
     <td>Azure</td>
     <td>
@@ -337,5 +337,6 @@ Feedstock Maintainers
 * [@MatthiasSchmidtblaicherQC](https://github.com/MatthiasSchmidtblaicherQC/)
 * [@janjagusch](https://github.com/janjagusch/)
 * [@jtilly](https://github.com/jtilly/)
+* [@tbenthompson](https://github.com/tbenthompson/)
 * [@xhochy](https://github.com/xhochy/)
 
