@@ -11,7 +11,7 @@ source:
 
 
 build:
-  number: 1
+  number: 2
   skip: true  # [py<39]
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
@@ -41,7 +41,6 @@ requirements:
     - python
     - joblib
     - numexpr
-    - {{ pin_compatible('numpy') }}
     - pandas
     - scikit-learn >=0.23
     - scipy
