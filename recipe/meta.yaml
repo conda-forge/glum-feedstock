@@ -1,5 +1,5 @@
 {% set name = "glum" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: af65edbabf7d76ab8caed0c51b6c02175ae7f5b7cca32ea65f465658edf24c9d
+  sha256: 3ed52adc9520c51102fa18292de18e3399fe26b2c2270f3ead8652439fb6382d
 
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py<39]
+  skip: true  # [python_impl == "pypy"]
   script: {{ PYTHON }} -m pip install . -vv
   script_env:
     - GLM_ARCHITECTURE=default
@@ -41,7 +42,6 @@ requirements:
     - python
     - joblib
     - numexpr
-    - {{ pin_compatible('numpy') }}
     - pandas
     - scikit-learn >=0.23
     - scipy
