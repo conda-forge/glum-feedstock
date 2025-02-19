@@ -3,13 +3,13 @@ About glum-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/glum-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/Quantco/glum
+Home: https://github.com/quantco/glum
 
 Package license: BSD-3-Clause
 
-Summary: High performance Python GLMs with all the features! 
+Summary: High performance Python GLMs with all the features!
 
-Development: https://github.com/Quantco/glum
+Development: https://github.com/quantco/glum
 
 Documentation: https://glum.readthedocs.io/
 
@@ -17,7 +17,6 @@ glum is a fast and feature-complete GLM estimator. It supports built-in
 cross-validation, exploiting regularization path, L1 and L2 regularization
 with Tikhonov penalties, sample weights, offsets, linear inequality constraints,
 and more!
-
 
 Current build status
 ====================
