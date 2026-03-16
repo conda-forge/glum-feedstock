@@ -1,6 +1,6 @@
 context:
   name: glum
-  version: "3.2.0"
+  version: "3.2.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 0ab471a2818189723dfbc9d86c779999509226d333a02e787abc795ce95642f1
+  sha256: 5612b3ebff44e826b6f1e1363885cbf02dab70415d1677fa9942c917b61b27a6
 
 
 build:
