@@ -12,7 +12,7 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   skip: python_impl == "pypy"
   script:
     content: python -m pip install . -vv
